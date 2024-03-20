@@ -1,0 +1,19 @@
+.profile__container {
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  height: auto;
+  background-color: cadetblue;
+}
+
+.profile__text {
+  padding: 10px;
+  font-size: larger;
+  width: 70%;
+}
+
+.profile__img {
+  width: 30%;
+  height: 100%;
+  background-color: lightblue;
+}

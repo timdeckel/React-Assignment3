@@ -1,0 +1,6 @@
+.ContentBody {
+  display: flex;
+  min-height: 90vh;
+  padding: 18px;
+  background-color: lightblue;
+}
