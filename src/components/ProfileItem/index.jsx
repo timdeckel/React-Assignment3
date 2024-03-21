@@ -1,6 +1,6 @@
-import styles from "./ProfileArticle.module.css";
+import styles from "./ProfileItem.module.css";
 
-const ProfileArticle = () => {
+const ProfileItem = () => {
   return (
     <div className={styles.profile__container}>
       <p className={styles.profile__text}>
@@ -10,10 +10,10 @@ const ProfileArticle = () => {
         dignissimos repellendus quos.
       </p>
       <div className={styles.profile__img}>
-        <img src="" alt="" />
+        <img src="" alt="" width="100px" height="100px" />
       </div>
     </div>
   );
 };
 
-export default ProfileArticle;
+export default ProfileItem;
