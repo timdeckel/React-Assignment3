@@ -1,0 +1,20 @@
+.prompt__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+  height: 60%;
+  padding: 24px;
+  gap: 12px;
+  background-color: lightseagreen;
+}
+
+.button__container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background-color: blue;
+}
