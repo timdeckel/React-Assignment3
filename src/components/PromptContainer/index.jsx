@@ -1,6 +1,6 @@
 import styles from "./PromptContainer.module.css";
 import PromptClicky from "../PromptClicky";
-import { factionList } from "../../data/PromptData";
+import { factionList } from "../../data/FactionData";
 
 const PromptContainer = ({updateFunction}) => {
   return (
