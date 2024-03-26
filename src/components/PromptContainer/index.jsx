@@ -2,21 +2,20 @@ import styles from "./PromptContainer.module.css";
 import PromptClicky from "../PromptClicky";
 import { factionList } from "../../data/PromptData";
 
-const PromptContainer = () => {
+const PromptContainer = ({updateFunction}) => {
   return (
     <div className={styles.prompt__container}>
       <div className={styles.button__container}>
-        {generatePrompts()}
+        {generatePrompts(updateFunction)}
       </div>
     </div>
   );
 };
 
-const generatePrompts = () => {
+const generatePrompts = (updateFunction) => {
   return (
     factionList.map((faction, index) => (
-      console.log(faction.backgroundURL),
-      <PromptClicky text={faction.factionName} backgroundURL={faction.backgroundURL} key={index}></PromptClicky>
+      <PromptClicky text={faction.factionName} backgroundURL={faction.backgroundURL} updateFunction={updateFunction} key={index}/>
     ))
   );
 }
