@@ -1,0 +1,10 @@
+
+.LoyalistContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 80%;
+  padding: 1rem;
+  align-items: center;
+  background-color: lightslategray;
+}

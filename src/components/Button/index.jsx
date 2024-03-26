@@ -4,7 +4,6 @@ import styles from "./Button.module.css";
 const Button = ({ ButtonText, updatePage }) => {
   const handleClick = () => {
     {ButtonText === "return" ? updatePage(null) : updatePage(ButtonText)}
-    // console.log(`${ButtonText} is clicked`)
   }
   return ( 
     
