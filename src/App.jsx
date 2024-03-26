@@ -1,17 +1,17 @@
 import { useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
-import ContentBody from "./components/ContentBody";
+import ChoiceContainer from "./components/ChoiceContainer"
 import Footer from "./components/Footer";
 
 function App() {
-  function pageState() {
-    const [PageState, setPageState] = useState("BaseState");
-  }
+    const [page, setPage] = useState(null);
   return (
     <>
       <Header></Header>
-      <ContentBody></ContentBody>
+      {!page && <ChoiceContainer updateFunction={setPage} />}
+      {page === "loyalists" && <LoyalistContainer updateFunction={setPage} />}
+      {page === "Chaos" && <ChaosContainer updateFunction={setPage} />}
       <Footer></Footer>
     </>
   );

@@ -1,8 +1,9 @@
-.MainContent {
+.ChoiceContainer {
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 24px;
+  min-height: 80%;
+  padding: 1rem;
   align-items: center;
   background-color: lightslategray;
 }
