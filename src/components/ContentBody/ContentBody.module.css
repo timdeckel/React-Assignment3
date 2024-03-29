@@ -1,0 +1,17 @@
+.ContentBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  width: 100%;
+  flex: 1;
+}
+
+.Content__Wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  width: 100%;
+}

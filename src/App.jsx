@@ -7,7 +7,7 @@ import ChaosContainer from "./components/ChaosContainer";
 import Footer from "./components/Footer";
 
 function App() {
-    const [page, setPage] = useState(null);
+    const [page, setPage] = useState("Imperium");
   return (
     <>
       <Header updateFunction={setPage}/>

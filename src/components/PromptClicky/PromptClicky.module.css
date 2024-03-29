@@ -3,6 +3,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  padding: 24px;
   position: relative;
   flex-direction: column-reverse;
   overflow: hidden;
