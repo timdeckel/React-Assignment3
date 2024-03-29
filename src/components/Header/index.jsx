@@ -6,9 +6,9 @@ import Button from "../Button";
 const Header = ({updateFunction}) => {
   return (
     <header className={styles.headerContainer}>
-      <Button ButtonText="" updatePage={updateFunction}/>
+      <Button ButtonText="return" updatePage={updateFunction} btnStyle='headerButton'/>
       <div className={styles.center__item}>
-        <h1 className={styles.headerHeadline}>Header</h1>
+        <h1 className={styles.headerHeadline}>Warhammer Faction Gallery</h1>
       </div>
     </header>
   );

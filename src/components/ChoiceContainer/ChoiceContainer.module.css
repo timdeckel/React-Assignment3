@@ -1,3 +1,4 @@
+@import '../../assets/colors/colors.css';
 .ChoiceContainer {
   display: flex;
   flex-direction: column;
@@ -5,5 +6,5 @@
   min-height: 80%;
   padding: 1rem;
   align-items: center;
-  background-color: lightslategray;
+  background: linear-gradient(225deg, var(--chaos-primary) 0%, var(--imperial-tertiary) 60%);
 }

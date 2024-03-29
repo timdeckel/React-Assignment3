@@ -4,11 +4,11 @@
   align-items: center;
   min-height: 5vh;
   padding: 24px 10px;
-  background-color: cadetblue;
+  background-color: rgb(44, 44, 44);
 }
 
 .headerHeadline {
-  color: cadetblue;
+  color: whitesmoke;
 }
 
 .header__item {
@@ -25,6 +25,5 @@
   align-items: center;
   gap: 10px;
   min-width: 20%;
-  background-color: lightblue;
   flex: 1;
 }

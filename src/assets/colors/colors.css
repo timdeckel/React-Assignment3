@@ -1,0 +1,34 @@
+
+:root {
+  --imperial-primary: #9AC0C6;
+  --imperial-secondary: #DFEDEE;
+  --imperial-tertiary: #436C77;
+
+  --chaos-primary: #C72B07;
+  --chaos-secondary: #450C05;
+  --chaos-tertiary: #FF7C36;
+
+  --light-frost: #F3F8F8;
+  --pale-silver: #DFEDEE;
+  --soft-blue-gray: #C3DADE;
+  --misty-teal: #9AC0C6;
+  --dusty-cerulean: #699DA7;
+  --slate-azure: #4D818D;
+  --shadowed-steel: #436C77;
+  --deep-graphite: #3B5963;
+  --nightfall-charcoal: #364C54;
+  --midnight-ash: #29373D;
+  --inky-obsidian: #1D2A2F;
+
+  --peach-puff: #FFF5EC;
+  --apricot: #FFE9D4;
+  --sandy-brown: #FFCEA8;
+  --mustard: #FFAB70;
+  --carrot-orange: #FF7C36;
+  --tangerine: #FF590F;
+  --scarlet: #F03E06;
+  --burnt-sienna: #C72B07;
+  --rusty-red: #9E230E;
+  --mahogany: #771E0E;
+  --maroon: #450C05;
+}

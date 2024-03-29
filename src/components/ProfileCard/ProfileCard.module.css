@@ -6,6 +6,13 @@
   background-color: lightblue;
   border-radius: 8px;
   height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 4px 8px, rgba(0, 0, 0, 0.23) 0px 4px 4px 4px;
+  transition: transform 0.4s ease;
+}
+
+.ProfileCard:hover{
+  cursor: pointer; 
+  transform: scale(1.05);
 }
 
 .ProfileCard > p {

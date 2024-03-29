@@ -1,3 +1,4 @@
+@import '../../assets/colors/colors.css';
 
 .ImperiumContainer {
   display: flex;
@@ -6,5 +7,5 @@
   min-height: 80%;
   padding: 1rem;
   align-items: center;
-  background-color: lightslategray;
+  background: linear-gradient(135deg, var(--imperial-primary) 0%, var(--midnight-ash) 60%);
 }

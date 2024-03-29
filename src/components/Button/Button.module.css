@@ -15,5 +15,17 @@
 }
 
 .header__button{
-  background-color: red;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../assets/icons/hammer-cog.png");
+  background-size: 60px 60px;
+}
+
+.header__button > p {
+  display: none;
+}
+
+.header__button:hover {
+  cursor: pointer;
 }
