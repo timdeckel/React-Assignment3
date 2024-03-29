@@ -6,7 +6,7 @@ import Button from "../Button";
 const Header = ({updateFunction}) => {
   return (
     <header className={styles.headerContainer}>
-      <Button ButtonText="return" updatePage={updateFunction}/>
+      <Button ButtonText="" updatePage={updateFunction}/>
       <div className={styles.center__item}>
         <h1 className={styles.headerHeadline}>Header</h1>
       </div>
