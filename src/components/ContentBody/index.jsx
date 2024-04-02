@@ -14,21 +14,19 @@ const ContentBody = ({ faction }) => {
   return (
     <>
       {!subPage && (
-        <div className={styles.ContentBody}>
-          <div className={styles.Content__Wrapper}>
-            {generateProfileCards(faction, handleClick)}
+        <>
+          {faction === "Chaos" && <h1>Welcome to the side of Chaos!</h1>}
+          {faction === "Imperium" && (
+            <h1>Welcome to the side of the Imperium!</h1>
+          )}
+          <div className={styles.ContentBody}>
+            <div className={styles.Content__Wrapper}>
+              {generateProfileCards(faction, handleClick)}
+            </div>
           </div>
-        </div>
+        </>
       )}
-      {subPage && getDetailedProfile(subPage)}
-    </>
-  );
-};
-
-const getDetailedProfile = (name) => {
-  return (
-    <>
-      <SubFactionProfile name={name} />
+      {subPage && <SubFactionProfile name={subPage} />}
     </>
   );
 };

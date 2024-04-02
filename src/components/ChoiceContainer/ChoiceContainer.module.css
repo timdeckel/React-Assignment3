@@ -1,10 +1,15 @@
-@import '../../assets/colors/colors.css';
+@import "../../assets/colors/colors.css";
 .ChoiceContainer {
   display: flex;
   flex-direction: column;
   flex: 1;
   min-height: 80%;
   padding: 1rem;
+  gap: 0.5rem;
   align-items: center;
-  background: linear-gradient(225deg, var(--chaos-primary) 0%, var(--imperial-tertiary) 60%);
+  background: linear-gradient(
+    225deg,
+    var(--chaos-primary) 0%,
+    var(--imperial-tertiary) 60%
+  );
 }

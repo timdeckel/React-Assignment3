@@ -1,11 +1,15 @@
-@import '../../assets/colors/colors.css';
+@import "../../assets/colors/colors.css";
 
 .ImperiumContainer {
   display: flex;
   flex-direction: column;
   flex: 1;
   min-height: 80%;
-  padding: 1rem;
+  padding: 0 1rem;
   align-items: center;
-  background: linear-gradient(135deg, var(--imperial-primary) 0%, var(--midnight-ash) 60%);
+  background: linear-gradient(
+    135deg,
+    var(--imperial-primary) 0%,
+    var(--midnight-ash) 60%
+  );
 }
