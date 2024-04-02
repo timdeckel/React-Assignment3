@@ -1,11 +1,16 @@
 import { getImageURL } from "../../utils/functions";
 import styles from "./ProfileCard.module.css";
 
-const ProfileCard = ({name, imageUrl}) => {
+const ProfileCard = ({ name, imageUrl, clickFunction }) => {
+  const handleClick = () => {
+    {
+      name === "" ? clickFunction(null) : clickFunction(name);
+    }
+  };
   return (
     <>
       <div className={styles.ProfileCard}>
-        <p>{name}</p>
+        <p onClick={handleClick}>{name}</p>
         <img src={getImageURL(imageUrl)} alt={name} />
       </div>
     </>
