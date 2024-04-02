@@ -9,7 +9,6 @@ const ContentBody = ({ faction }) => {
 
   const handleClick = (data) => {
     setPage(data);
-    console.log(data);
   };
 
   return (

@@ -8,12 +8,13 @@
   flex-direction: column-reverse;
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 4px 8px, rgba(0, 0, 0, 0.23) 0px 4px 4px 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 4px 8px,
+    rgba(0, 0, 0, 0.23) 0px 4px 4px 4px;
   transition: transform 0.4s ease;
 }
 
 .button__background:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .button__background > img {
@@ -26,22 +27,8 @@
   object-fit: cover;
 }
 
-.button {
-  /* display: flex;
-  z-index: 20;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  padding: 8px;
-  margin: 1rem;
-  border-radius: 8px;
-  background-color: lightblue;
-  border: 2px solid cadetblue;
-  cursor: pointer; */
-}
-
 @media only screen and (min-width: 720px) {
   .button__background:not(:hover) > img {
-    filter: grayscale(60%); 
+    filter: grayscale(60%);
   }
 }
