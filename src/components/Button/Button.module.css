@@ -12,6 +12,7 @@
 
 .button__body:hover {
   background: rgb(86, 119, 153);
+  cursor: pointer;
 }
 
 .header__button{
