@@ -1,0 +1,24 @@
+.subFactionProfile__container {
+  display: flex;
+  flex-direction: column;
+  background-color: cadetblue;
+  gap: 12px;
+  padding: 12px;
+  margin: 12px 0;
+}
+
+.row {
+  display: flex;
+  padding: 12px;
+  gap: 12px;
+  background-color: purple;
+}
+
+.img {
+  width: 200px;
+  height: 300px;
+}
+
+.row__item {
+  background-color: pink;
+}

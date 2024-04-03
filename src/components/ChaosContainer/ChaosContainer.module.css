@@ -1,11 +1,15 @@
-@import '../../assets/colors/colors.css';
+@import "../../assets/colors/colors.css";
 
 .ChaosContainer {
   display: flex;
   flex-direction: column;
   flex: 1;
   min-height: 80%;
-  padding: 1rem;
+  padding: 0 1rem;
   align-items: center;
-  background: linear-gradient(225deg, var(--chaos-primary) 0%, var(--chaos-secondary) 60%);
+  background: linear-gradient(
+    225deg,
+    var(--chaos-primary) 0%,
+    var(--chaos-secondary) 60%
+  );
 }

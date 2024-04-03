@@ -9,6 +9,8 @@
 
 .headerHeadline {
   color: whitesmoke;
+  margin: 0 60px;
+  text-align: center;
 }
 
 .header__item {
