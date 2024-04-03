@@ -16,9 +16,7 @@ const ContentBody = ({ faction }) => {
       {!subPage && (
         <>
           {faction === "Chaos" && <h1>Welcome to the side of Chaos!</h1>}
-          {faction === "Imperium" && (
-            <h1>Welcome to the side of the Imperium!</h1>
-          )}
+          {faction === "Imperium" && (<h1>Welcome to the side of the Imperium!</h1>)}
           <div className={styles.ContentBody}>
             <div className={styles.Content__Wrapper}>
               {generateProfileCards(faction, handleClick)}
@@ -26,7 +24,7 @@ const ContentBody = ({ faction }) => {
           </div>
         </>
       )}
-      {subPage && <SubFactionProfile name={subPage} />}
+      {subPage && <SubFactionProfile name={subPage} updateFunction={setPage}/>}
     </>
   );
 };

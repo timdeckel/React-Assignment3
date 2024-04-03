@@ -4,7 +4,7 @@ import ContentBody from "../ContentBody";
 const ImperiumContainer = ({ updateFunction }) => {
   return (
     <div className={styles.ImperiumContainer}>
-      <ContentBody faction="Imperium" />
+      <ContentBody faction="Imperium" updateFunction={updateFunction}/>
     </div>
   );
 };

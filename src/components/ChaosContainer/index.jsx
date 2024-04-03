@@ -1,10 +1,10 @@
 import styles from "./ChaosContainer.module.css";
 import ContentBody from "../ContentBody";
 
-const ChaosContainer = () => {
+const ChaosContainer = ({updateFunction}) => {
   return (
     <div className={styles.ChaosContainer}>
-      <ContentBody faction="Chaos" />
+      <ContentBody faction="Chaos" updateFunction={updateFunction} />
     </div>
   );
 };

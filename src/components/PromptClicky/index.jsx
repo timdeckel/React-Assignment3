@@ -10,7 +10,7 @@ const PromptClicky = ({ text, backgroundURL, updateFunction }) => {
           src={getImageURL(backgroundURL)}
           alt={text + " and name of background is " + backgroundURL}
         />
-        <Button ButtonText={text} updatePage={updateFunction} />
+        <Button ButtonText={text} updatePage={updateFunction} location={text} />
       </div>
     </>
   );

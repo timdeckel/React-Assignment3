@@ -9,8 +9,8 @@ const ProfileCard = ({ name, imageUrl, clickFunction }) => {
   };
   return (
     <>
-      <div className={styles.ProfileCard}>
-        <p onClick={handleClick}>{name}</p>
+      <div className={styles.ProfileCard} onClick={handleClick}>
+        <p >{name}</p>
         <img src={getImageURL(imageUrl)} alt={name} />
       </div>
     </>

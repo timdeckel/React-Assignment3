@@ -1,6 +1,6 @@
 import styles from "./Button.module.css";
 
-const Button = ({ ButtonText, updatePage, btnStyle }) => {
+const Button = ({ ButtonText, updatePage, btnStyle, location }) => {
   const getButtonStyling = () => {
     let buttonStyle = styles.button__body;
     if (btnStyle === "headerButton") {
@@ -9,8 +9,9 @@ const Button = ({ ButtonText, updatePage, btnStyle }) => {
     return buttonStyle;
   };
   const handleClick = () => {
+    console.log("a button has been pressed, here is btntxt: "+ ButtonText + " and here is location" + location)
     {
-      ButtonText === "return" ? updatePage(null) : updatePage(ButtonText);
+      location === "home" ? updatePage(null) : updatePage(location);
     }
   };
   return (
