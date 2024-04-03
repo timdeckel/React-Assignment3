@@ -1,6 +1,6 @@
 @import "../../assets/colors/colors.css";
 
-.ImperiumContainer {
+.imperium__container {
   display: flex;
   flex-direction: column;
   flex: 1;

@@ -1,4 +1,4 @@
-.ProfileCard {
+.profile__card {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -11,11 +11,11 @@
   transition: transform 0.4s ease;
 }
 
-.ProfileCard:hover {
+.profile__card:hover {
   transform: scale(1.05);
 }
 
-.ProfileCard > p {
+.profile__card > p {
   z-index: 20;
   font-size: 24px;
   color: white;
@@ -25,11 +25,11 @@
   margin: 0.5rem;
 }
 
-.ProfileCard > p:hover {
+.profile__card > p:hover {
   cursor: pointer;
 }
 
-.ProfileCard > img {
+.profile__card > img {
   position: absolute;
   z-index: 10;
   background-color: beige;

@@ -1,11 +1,11 @@
 import styles from "./PromptContainer.module.css";
-import PromptClicky from "../PromptClicky";
+import Prompt from "../Prompt";
 import { factionList } from "../../data/FactionData";
 
 const PromptContainer = ({updateFunction}) => {
   return (
-    <div className={styles.prompt__container}>
-      <div className={styles.button__container}>
+    <div className={styles.prompt__wrapper}>
+      <div className={styles.prompt__container}>
         {generatePrompts(updateFunction)}
       </div>
     </div>
@@ -15,7 +15,7 @@ const PromptContainer = ({updateFunction}) => {
 const generatePrompts = (updateFunction) => {
   return (
     factionList.map((faction, index) => (
-      <PromptClicky text={faction.factionName} backgroundURL={faction.backgroundURL} updateFunction={updateFunction} key={index}/>
+      <Prompt text={faction.factionName} backgroundURL={faction.backgroundURL} updateFunction={updateFunction} key={index}/>
     ))
   );
 }

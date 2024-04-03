@@ -10,11 +10,11 @@ const SubFactionProfile = ({ name, updateFunction }) => {
       <div className={styles.breadcrumb__button}>
         <Button ButtonText={"back"} updatePage={updateFunction} location={null}/>
       </div>
-      <div className={styles.subFactionProfile__container}>
+      <div className={styles.subFaction__profile__container}>
         <h1>{profileData.name}</h1>
-        <div className={styles.row}>
-           <img className={styles.img} src={getImageURL(profileData.imageURL)} alt={name} />
-          <div className={styles.row__item}>
+        <div className={styles.subFaction__profile__content}>
+           <img className={styles.subFaction__profile__img} src={getImageURL(profileData.imageURL)} alt={name} />
+          <div className={styles.subFaction__profile__text}>
             <p>Qoute: {profileData.quote}</p>
             <p>Allegiance: {profileData.allegiance}</p>
             <p>{profileData.description}</p>

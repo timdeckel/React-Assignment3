@@ -3,7 +3,7 @@ import ContentBody from "../ContentBody";
 
 const ChaosContainer = ({updateFunction}) => {
   return (
-    <div className={styles.ChaosContainer}>
+    <div className={styles.chaos__container}>
       <ContentBody faction="Chaos" updateFunction={updateFunction} />
     </div>
   );

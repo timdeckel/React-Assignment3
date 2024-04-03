@@ -1,4 +1,4 @@
-.ContentBody {
+.content__body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,7 +7,7 @@
   flex: 1;
 }
 
-.Content__Wrapper {
+.content__wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));

@@ -17,8 +17,8 @@ const ContentBody = ({ faction }) => {
         <>
           {faction === "Chaos" && <h1>Welcome to the side of Chaos!</h1>}
           {faction === "Imperium" && (<h1>Welcome to the side of the Imperium!</h1>)}
-          <div className={styles.ContentBody}>
-            <div className={styles.Content__Wrapper}>
+          <div className={styles.content__body}>
+            <div className={styles.content__wrapper}>
               {generateProfileCards(faction, handleClick)}
             </div>
           </div>
@@ -29,18 +29,12 @@ const ContentBody = ({ faction }) => {
   );
 };
 
-const getFilteredList = (faction) => {
-  return subFactionList.filter(
-    (subFaction) => subFaction.allegiance === faction
-  );
-};
-
 export const generateProfileCards = (faction, handleClick) => {
-  let filterdList = getFilteredList(faction);
-  return filterdList.map((faction, index) => (
+  const filterdList = subFactionList.filter((subFaction) => subFaction.allegiance === faction);
+  return filterdList.map((subfaction, index) => (
     <ProfileCard
-      name={faction.name}
-      imageUrl={faction.imageURL}
+      name={subfaction.name}
+      imageUrl={subfaction.imageURL}
       clickFunction={handleClick}
       key={index}
     />

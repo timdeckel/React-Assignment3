@@ -1,11 +1,11 @@
-import styles from "./PromptClicky.module.css";
+import styles from "./Prompt.module.css";
 import { getImageURL } from "../../utils/functions";
 import Button from "../Button";
 
-const PromptClicky = ({ text, backgroundURL, updateFunction }) => {
+const Prompt = ({ text, backgroundURL, updateFunction }) => {
   return (
     <>
-      <div className={styles.button__background}>
+      <div className={styles.prompt__background}>
         <img
           src={getImageURL(backgroundURL)}
           alt={text + " and name of background is " + backgroundURL}
@@ -16,4 +16,4 @@ const PromptClicky = ({ text, backgroundURL, updateFunction }) => {
   );
 };
 
-export default PromptClicky;
+export default Prompt;
